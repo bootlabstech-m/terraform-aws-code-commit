@@ -1,5 +1,9 @@
+variable "no_of_repos" {
+    type = number
+    description  = "No of repos to be created."
+}
 variable "repository_name" {
-    type = string
+    type = list(string)
     description  = "Repository Name to create repository"
 }
 variable "description" {
